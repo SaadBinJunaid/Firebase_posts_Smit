@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notes App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div id="signup-form">
+
+            <div class="auth-header">
+                <h1>Notes App</h1>
+                <p>Create an account to get started</p>
+            </div>
+
+            <input type="text" id="signup-name" placeholder="Please Enter Your Full Name">
+
+            <input type="email" id="signup-email" placeholder="Please Enter Your Email">
+
+            <input type="password" id="signup-password" placeholder="Please Enter Your Password">
+
+            <button id="signup">Sign Up</button>
+
+            <p class="auth-toggle">Already have an account? <a id="show-login">Login</a></p>
+
+        </div>
+
+
+        <div id="login-form">
+
+            <div class="auth-header">
+                <h1>Notes App</h1>
+                <p>Welcome back! Please login</p>
+            </div>
+
+            <input type="email" id="login-email" placeholder="Please Enter Your Email">
+
+            <input type="password" id="login-password" placeholder="Please Enter Your Password">
+
+            <button id="login">login</button>
+
+            <p class="auth-toggle">Don't have an account? <a id="show-signup">Sign Up</a></p>
+
+        </div>
+
+    </div>
+
+
+    <div id="posts">
+
+        <div class="top-bar">
+            <h1>My Notes</h1>
+            <button id="logout">logout</button>
+        </div>
+
+        <div class="create-post">
+            <h2>New Note</h2>
+            <input type="text" id="title" placeholder="Please Enter Your Post Title">
+            <input type="text" id="content" placeholder="Please Enter Your Post Content">
+            <button id="create-post">Create Post</button>
+        </div>
+
+        <div class="users-section">
+            <h2>Users</h2>
+            <div id="user-list"></div>
+        </div>
+
+        <div class="posts-section">
+            <h2>All Notes</h2>
+            <div id="post-list"></div>
+        </div>
+
+    </div>
+
+
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
